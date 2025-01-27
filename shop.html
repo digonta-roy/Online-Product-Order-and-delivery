@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Shop</title>
+		<!-- Fac Icon -->
+		<link rel="icon" type="text/css" href="assets/img/logo.png">
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+		<!-- Owl Carsul -->
+		<link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+		<link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+		<!-- Magicpopup -->
+		<link rel="stylesheet" href="assets/css/magnific-popup.css">
+		<!-- Animate CSS -->
+		<link rel="stylesheet" href="assets/css/animate.min.css">
+		<!-- Fontawesome CSS -->
+		<link rel="stylesheet" href="assets/icon/css/font-awesome.min.css">
+		<!-- Style CSS -->
+		<link rel="stylesheet" href="assets/css/style.css">
+		<style type="text/css" media="screen">
+		*{
+			list-style: none;
+		}
+			.card-img-top{
+				height:250px !important;
+			}
+		.card:hover{
+			border: 2px solid red;
+			border-radius: 5%;
+			box-shadow: 4px 5px 6px #000;
+			/*background-color: #1CACD7;*/
+			background-color: #c7c7c7;
+		}
+			.card-img-top:hover{
+				padding: 10px;
+				transition: 0.7s;
+			}
+		
+		.top{
+			height:50px;
+			width: 50px;
+			background: red;
+			opacity: .6;
+			padding: 10px;
+			border:1px solid black;
+			border-radius: 10%;
+			color: white;
+			position: fixed;
+			right: 30px;
+			bottom: 30px;
+			text-align:center;
+			font-weight: bold;
+			font-size: 20px;
+		}
+		/*.pos{
+			height:600px;
+			width: 400px;
+			
+			padding: 10px;
+			border:1px solid black;
+			border-radius: 5%;
+		
+			position: fixed;
+			left: 70px;
+			top: 100px;
+			text-align:center;
+			font-weight: bold;
+			font-size: 20px;
+		}*/
+		
+		</style>
+	</head>
+	<body>
+		
+		<!-- Nav Start -->
+		<nav class="navbar navbar-expand-lg navbar-light   shadow">
+			<a href="#" class="navbar-brand">
+				<img src="assets/img/large.png" alt="LOGO" class="max-h-80 mx-3">
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+			
+			<span class="navbar-toggler-icon"></span>
+			</button>
+			
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item mx-4  p-2 " >
+						<a href="index.html" class="nav-link"><i class="fa fa-home home" aria-hidden="true"></i>&nbsp Home</a>
+					</li>
+					
+					<li class="nav-item active mx-4  p-2">
+						<a href="#" class="nav-link "><i class="fa fa-shopping-bag home" aria-hidden="true"></i>&nbsp Shop</a>
+						
+					</li>
+					<li class="nav-item mx-4  p-2">
+						<a href="#" class="nav-link "><i class="fa fa-user home" aria-hidden="true"></i>&nbsp profile</a>
+					</li>
+					<li class="nav-item mx-4  p-2">
+						<a href="#" class="nav-link "><i class="fa fa-shopping-cart home" aria-hidden="true"></i>&nbsp Cart</a>
+					</li>
+				</ul>
+			</div>
+			<form class="form-inline my-2 my-lg-0">
+				<input class="form-control mr-sm-2" type="search" placeholder="Enter Your Keywords..." aria-label="Search">
+				<button class="btn btn-outline-dark my-2 my-sm-0 font-weight-bold" type="submit">Search</button>
+			</form>
+		</nav>
+		<!-- nav End -->
+		
+		
+		<!-- Section Part Start-->
+		<section>
+			<!-- <div class="container"> -->
+			<div class="row mx-4">
+				<div class="col-sm-3">
+					<div class="left-sidebar bg-dark my-5 text-center ">
+						<h2>Category</h2>
+						<div class="panel-group category-products" id="accordian"><!--category-productsr-->
+						
+						<div class="panel panel-default ">
+							<div class="panel-heading bg-primary ">
+								<h4 class="panel-title ">
+								<a data-toggle="collapse" data-parent="#accordian" href="#dress" class="text-white font-weight-bold">
+									<span class="badge pull-right  text-white font-weight-bold"><i class="fa fa-chevron-circle-down" aria-hidden="true"></i></span>
+									Dress
+								</a>
+								</h4>
+							</div>
+							<div id="dress" class="panel-collapse collapse">
+								<div class="panel-body">
+									<ul>
+										<div class="panel panel-default">
+											<div class="panel-heading">
+												<h4 class="panel-title">
+												<a data-toggle="collapse" data-parent="#accordian" href="#mens">
+													<span class="badge pull-right"><i class="fa fa-plus"></i></span>
+													Gents Fashion
+												</a>
+												</h4>
+											</div>
+											<div id="mens" class="panel-collapse collapse">
+												<div class="panel-body">
+													<ul>
+														<li><a href="#shirt">Shirt</a></li>
+														<li><a href="#pant">Pant</a></li>
+														<li><a href="#t-shirt">T-Shirt</a></li>
+														<li><a href="#panjabi">Panjabi</a></li>
+														<li><a href="#coat">Jacket</a></li>
+														
+													</ul>
+												</div>
+											</div>
+										</div>
+										
+										<div class="panel panel-default">
+											<div class="panel-heading">
+												<h4 class="panel-title">
+												<a data-toggle="collapse" data-parent="#accordian" href="#womens">
+													<span class="badge pull-right"><i class="fa fa-plus"></i></span>
+													Ladis Fashion
+												</a>
+												</h4>
+											</div>
+											<div id="womens" class="panel-collapse collapse">
+												<div class="panel-body">
+													<ul>
+														<li><a href="ladis-fashion.html">Three Piece</a></li>
+														<li><a href="ladis-fashion.html">Shari</a></li>
+														<li><a href="ladis-fashion.html">Western Dress</a></li>
+														<li><a href="ladis-fashion.html">Lehenga</a></li>
+														
+													</ul>
+												</div>
+											</div>
+										</div>
+										<li><a href="kids_fashion.html" class="mx-4 font-weight-bold my-1 py-1">Kids Fashion</a></li>
+										
+									</ul>
+								</div>
+							</div>
+						</div>
+						
+						
+						<!-- <div class="panel panel-default">
+									<div class="panel-body bg-secondary py-2 px-3">
+												<a href="Watch.html" class="text-white font-weight-bold ">Watch</a>
+									</div>
+						</div> -->
+						<div class="panel panel-default">
+							<div class="panel-heading bg-secondary">
+								<h4 class="panel-title">
+								<a data-toggle="collapse" data-parent="#accordian" href="#watch" class="text-white font-weight-bold">
+									<span class="badge pull-right text-white font-weight-bold"><i class="fa fa-chevron-circle-down" aria-hidden="true"></i></span>
+									Watch
+								</a>
+								</h4>
+							</div>
+							<div id="watch" class="panel-collapse collapse">
+								<div class="panel-body">
+									<ul>
+										<li><a href="watch.html">Analog Watch</a></li>
+										<li><a href="watch.html">Smart Watch</a></li>
+										
+										
+									</ul>
+								</div>
+							</div>
+						</div>
+						
+						<div class="panel panel-default">
+							<div class="panel-heading bg-info">
+								<h4 class="panel-title">
+								<a data-toggle="collapse" data-parent="#accordian" href="#shoes" class="text-white font-weight-bold">
+									<span class="badge pull-right text-white font-weight-bold"><i class="fa fa-chevron-circle-down" aria-hidden="true"></i></span>
+									Shoes
+								</a>
+								</h4>
+							</div>
+							<div id="shoes" class="panel-collapse collapse">
+								<div class="panel-body">
+									<ul>
+										<li><a href="shoes.html">Man</a></li>
+										<li><a href="shoes.html">Woman</a></li>
+										
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading bg-danger">
+								<h4 class="panel-title">
+								<a data-toggle="collapse" data-parent="#accordian" href="#electronic" class="text-white font-weight-bold">
+									<span class="badge pull-right text-white font-weight-bold"><i class="fa fa-chevron-circle-down" aria-hidden="true"></i></span>
+									Electronics Device
+								</a>
+								</h4>
+							</div>
+							<div id="electronic" class="panel-collapse collapse">
+								<div class="panel-body">
+									<ul>
+										<li><a href="#">Laptop</a></li>
+										<li><a href="#">Tv</a></li>
+										<li><a href="#">Phone</a></li>
+										<li><a href="#">Execories</a></li>
+										
+									</ul>
+								</div>
+							</div>
+						</div>
+						
+						<!--/category-products-->
+						
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-9 padding-right my-5">
+				<div class="features_items"><!--features_items-->
+				<h2 class="title text-center bg-dark text-white font-weight-bold ">Gents Fashion</h2>
+				<div class="container">
+					<h2 id="shirt " class="bg-primary py-3 px-4">Shirt</h2>
+					<div class="row">
+						
+						<!-- Single card Start -->
+						<div class="col-md-3 card mx-4 my-3" style="width: 18rem;">
+							<img src="assets/img/Product/Shirt/Autumn-Men-Cotton-Shirt-9-1.jpg" class="card-img-top" alt="...">
+							<div class="card-body text-center">
+								<h5 class="card-title">Card title</h5>
+								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								<a href="#" class="btn btn-success"><i class="fa fa-shopping-cart " aria-hidden="true"></i>&nbspAdd to Cart</a>
+							</div>
+						</div>
+						<!-- Single card End --><!-- Single card Start -->
+						<div class="col-md-3 card mx-4 my-3" style="width: 18rem;">
+							<img src="assets/img/Product/Shirt/d1ddb348b3c434df257a9b8f527ffea6.jpg_340x340q80.jpg_.webp" class="card-img-top" alt="...">
+							<div class="card-body text-center">
+								<h5 class="card-title">Card title</h5>
+								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								<a href="#" class="btn btn-success"><i class="fa fa-shopping-cart " aria-hidden="true"></i>&nbspAdd to Cart</a>
+							</div>
+						</div>
+						<!-- Single card End --><!-- Single card Start -->
+						<div class="col-md-3 card mx-4 my-3" style="width: 18rem;">
+							<img src="assets/img/Product/Shirt/download.jpg" class="card-img-top" alt="...">
+							<div class="card-body text-center">
+								<h5 class="card-title">Card title</h5>
+								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								<a href="#" class="btn btn-success"><i class="fa fa-shopping-cart " aria-hidden="true"></i>&nbspAdd to Cart</a>
+							</div>
+						</div>
+						<!-- Single card End -->
+						<!-- Single card Start -->
+						<div class="col-md-3 card mx-4 my-3" style="width: 18rem;">
+							<img src="assets/img/Product/Shirt/HTB11gPWJVXXXXaQXXXXq6xXFXXXr.jpg" class="card-img-top" alt="...">
+							<div class="card-body text-center">
+								<h5 class="card-title">Card title</h5>
+								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								<a href="#" class="btn btn-success"><i class="fa fa-shopping-cart " aria-hidden="true"></i>&nbspAdd to Cart</a>
+							</div>
+						</div>
+						<!-- Single card End --><!-- Single card Start -->
+						<div class="col-md-3 card mx-4 my-3" style="width: 18rem;">
+							<img src="assets/img/Product/Shirt/images.jpg" class="card-img-top" alt="...">
+							<div class="card-body text-center">
+								<h5 class="card-title">Card title</h5>
+								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								<a href="#" class="btn btn-success"><i class="fa fa-shopping-cart " aria-hidden="true"></i>&nbspAdd to Cart</a>
+							</div>
+						</div>
+						<!-- Single card End --><!-- Single card Start -->
+						<div class="col-md-3 card mx-4 my-3" style="width: 18rem;">
+							<img src="assets/img/Product/Shirt/mens-denim-shirt-mdls007-sh782-102081r.jpg" class="card-img-top" alt="...">
+							<div class="card-body text-center">
+								<h5 class="card-title">Card title</h5>
+								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								<a href="#" class="btn btn-success"><i class="fa fa-shopping-cart " aria-hidden="true"></i>&nbspAdd to Cart</a>
+							</div>
+						</div>
+						<!-- Single card End --><!-- Single card Start -->
+						<div class="col-md-3 card mx-4 my-3" style="width: 18rem;">
+							<img src="assets/img/Product/Shirt/Plus-Size-font-b-Shirts-b-font-New-2017-Spring-font-b-Casual-b-font-font.webp" class="card-img-top" alt="...">
+							<div class="card-body text-center">
+								<h5 class="card-title">Card title</h5>
+								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								<a href="#" class="btn btn-success"><i class="fa fa-shopping-cart " aria-hidden="true"></i>&nbspAdd to Cart</a>
+							</div>
+						</div>
+						<!-- Single card End --><!-- Single card Start -->
+						<div class="col-md-3 card mx-4 my-3" style="width: 18rem;">
+							<img src="assets/img/Product/Shirt/pri_175_p-1517495991.webp" class="card-img-top" alt="...">
+							<div class="card-body text-center">
+								<h5 class="card-title">Card title</h5>
+								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								<a href="#" class="btn btn-success"><i class="fa fa-shopping-cart " aria-hidden="true"></i>&nbspAdd to Cart</a>
+							</div>
+						</div>
+						<!-- Single card End --><!-- Single card Start -->
+						<div class="col-md-3 card mx-4 my-3" style="width: 18rem;">
+							<img src="assets/img/Product/Shirt/zoom_0-1502361440.webp" class="card-img-top" alt="...">
+							<div class="card-body text-center">
+								<h5 class="card-title">Card title</h5>
+								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								<a href="#" class="btn btn-success"><i class="fa fa-shopping-cart " aria-hidden="true"></i>&nbspAdd to Cart</a>
+							</div>
+						</div>
+						<!-- Single card End -->
+						<!-- Single card Start -->
+						<div class="col-md-3 card mx-4 my-3" style="width: 18rem;">
+							<img src="assets/img/Product/Shirt/1186-15391-casual-shirt-party-wear-red-rang-bangladesh-32260-1-thumbnail-500x500-70.jpg" class="card-img-top" alt="..." >
+							<div class="card-body text-center">
+								<h5 class="card-title">Card title</h5>
+								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								<a href="#" class="btn btn-success"><i class="fa fa-shopping-cart " aria-hidden="true"></i>&nbspAdd to Cart</a>
+							</div>
+						</div>
+						<!-- Single card End --><!-- Single card Start -->
+						<div class="col-md-3 card mx-4 my-3" style="width: 18rem; ">
+							<img src="assets/img/Product/Shirt/14072020215811_2986.jpg" class="card-img-top" alt="...">
+							<div class="card-body text-center">
+								<h5 class="card-title">Card title</h5>
+								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								<a href="#" class="btn btn-success"><i class="fa fa-shopping-cart " aria-hidden="true"></i>&nbspAdd to Cart</a>
+							</div>
+						</div>
+						<!-- Single card End --><!-- Single card Start -->
+						<div class="col-md-3 card mx-4 my-3" style="width: 18rem;">
+							<img src="assets/img/Product/Shirt/18144566_0_casual-shirt-for-men.webp" class="card-img-top" alt="...">
+							<div class="card-body text-center">
+								<h5 class="card-title">Card title</h5>
+								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								<a href="#" class="btn btn-success"><i class="fa fa-shopping-cart " aria-hidden="true"></i>&nbspAdd to Cart</a>
+							</div>
+						</div>
+						<!-- Single card End -->
+					</div>
+				</div>
+
+
+							<div class="container">
+					<h2 id="pant" class="bg-info shadow py-3 px-4">Pant</h2>
+					<div class="row">
+						<!-- Single card Start -->
+						<div class="col-md-3 card mx-4 my-3" style="width: 18rem;">
+							<img src="assets/img/Product/Pant/0017908_dress-pant.jpg" class="card-img-top" alt="...">
+							<div class="card-body text-center">
+								<h5 class="card-title">Card title</h5>
+								<p class="card-text">Some quick example text to build on  content.</p>
+								<a href="#" class="btn btn-success"><i class="fa fa-shopping-cart " aria-hidden="true"></i>&nbspAdd to Cart</a>
+							</div>
+						</div>
+						<!-- Single card End --><!-- Single card Start -->
+						<div class="col-md-3 card mx-4 my-3" style="width: 18rem;">
+							<img src="assets/img/Product/Pant/0177445_premium-denim-pant-for-men-249a_550.jpg" class="card-img-top" alt="...">
+							<div class="card-body text-center">
+								<h5 class="card-title">Card title</h5>
+								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								<a href="#" class="btn btn-success"><i class="fa fa-shopping-cart " aria-hidden="true"></i>&nbspAdd to Cart</a>
+							</div>
+						</div>
+						<!-- Single card End --><!-- Single card Start -->
+						<div class="col-md-3 card mx-4 my-3" style="width: 18rem;">
+							<img src="assets/img/Product/Pant/0315701_mens-stretchable-denim-pant.webp" class="card-img-top" alt="...">
+							<div class="card-body text-center">
+								<h5 class="card-title">Card title</h5>
+								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								<a href="#" class="btn btn-success"><i class="fa fa-shopping-cart " aria-hidden="true"></i>&nbspAdd to Cart</a>
+							</div>
+						</div>
+						<!-- Single card End --><!-- Single card Start -->
+						<div class="col-md-3 card mx-4 my-3" style="width: 18rem;">
+							<img src="assets/img/Product/Pant/11461041891935-Campus-Sutra-Black-Track-Pants-4871461041891055-1.webp" class="card-img-top" alt="...">
+							<div class="card-body text-center">
+								<h5 class="card-title">Card title</h5>
+								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								<a href="#" class="btn btn-success"><i class="fa fa-shopping-cart " aria-hidden="true"></i>&nbspAdd to Cart</a>
+							</div>
+						</div>
+						<!-- Single card End --><!-- Single card Start -->
+						<div class="col-md-3 card mx-4 my-3" style="width: 18rem;">
+							<img src="assets/img/Product/Pant/51-4yGgjTuL._UL1000_.jpg" class="card-img-top" alt="...">
+							<div class="card-body text-center">
+								<h5 class="card-title">Card title</h5>
+								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								<a href="#" class="btn btn-success"><i class="fa fa-shopping-cart " aria-hidden="true"></i>&nbspAdd to Cart</a>
+							</div>
+						</div>
+						<!-- Single card End -->
+						<!-- Single card Start -->
+						<div class="col-md-3 card mx-4 my-3" style="width: 18rem;">
+							<img src="assets/img/Product/Pant/ab141cf6c389986804e382bfca06c885.jpg" class="card-img-top" alt="...">
+							<div class="card-body text-center">
+								<h5 class="card-title">Card title</h5>
+								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								<a href="#" class="btn btn-success"><i class="fa fa-shopping-cart " aria-hidden="true"></i>&nbspAdd to Cart</a>
+							</div>
+						</div>
+						<!-- Single card End -->
+						<!-- Single card Start -->
+						<div class="col-md-3 card mx-4 my-3" style="width: 18rem;">
+							<img src="assets/img/Product/Pant/download.jpg" class="card-img-top" alt="...">
+							<div class="card-body text-center">
+								<h5 class="card-title">Card title</h5>
+								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								<a href="#" class="btn btn-success"><i class="fa fa-shopping-cart " aria-hidden="true"></i>&nbspAdd to Cart</a>
+							</div>
+						</div>
+						<!-- Single card End -->
+						<!-- Single card Start -->
+						<div class="col-md-3 card mx-4 my-3" style="width: 18rem;">
+							<img src="assets/img/Product/Pant/HTB1iLZURVXXXXbeXpXXq6xXFXXXD.jpg_q50.jpg" class="card-img-top" alt="...">
+							<div class="card-body text-center">
+								<h5 class="card-title">Card title</h5>
+								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								<a href="#" class="btn btn-success"><i class="fa fa-shopping-cart " aria-hidden="true"></i>&nbspAdd to Cart</a>
+							</div>
+						</div>
+						<!-- Single card End -->
+						<!-- Single card Start -->
+						<div class="col-md-3 card mx-4 my-3" style="width: 18rem;">
+							<img src="assets/img/Product/Pant/images.jpg" class="card-img-top" alt="...">
+							<div class="card-body text-center">
+								<h5 class="card-title">Card title</h5>
+								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								<a href="#" class="btn btn-success"><i class="fa fa-shopping-cart " aria-hidden="true"></i>&nbspAdd to Cart</a>
+							</div>
+						</div>
+						<!-- Single card End --><!-- Single card Start -->
+						<div class="col-md-3 card mx-4 my-3" style="width: 18rem;">
+							<img src="assets/img/Product/Pant/jkpat0090_1.webp" class="card-img-top" alt="...">
+							<div class="card-body text-center">
+								<h5 class="card-title">Card title</h5>
+								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								<a href="#" class="btn btn-success"><i class="fa fa-shopping-cart " aria-hidden="true"></i>&nbspAdd to Cart</a>
+							</div>
+						</div>
+						<!-- Single card End --><!-- Single card Start -->
+						<div class="col-md-3 card mx-4 my-3" style="width: 18rem;">
+							<img src="assets/img/Product/Pant/M-PANTS-15152-19288-OLIVE_2_394x.webp" class="card-img-top" alt="...">
+							<div class="card-body text-center">
+								<h5 class="card-title">Card title</h5>
+								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								<a href="#" class="btn btn-success"><i class="fa fa-shopping-cart " aria-hidden="true"></i>&nbspAdd to Cart</a>
+							</div>
+						</div>
+						<!-- Single card End --><!-- Single card Start -->
+						<div class="col-md-3 card mx-4 my-3" style="width: 18rem;">
+							<img src="assets/img/Product/Pant/rBVaWVy6ENGAMzLoAAI9tYELy-0379.jpg" class="card-img-top" alt="...">
+							<div class="card-body text-center">
+								<h5 class="card-title">Card title</h5>
+								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								<a href="#" class="btn btn-success"><i class="fa fa-shopping-cart " aria-hidden="true"></i>&nbspAdd to Cart</a>
+							</div>
+						</div>
+						<!-- Single card End --><!-- Single card Start -->
+						<div class="col-md-3 card mx-4 my-3" style="width: 18rem;">
+							<img src="assets/img/Product/Pant/Summer-New-Nne-jeans-Men-9-Points-pants-Men-Loose-Elastic-Anti-theft-Pocket-Casual-pants__36512.1549623894.webp" class="card-img-top" alt="...">
+							<div class="card-body text-center">
+								<h5 class="card-title">Card title</h5>
+								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								<a href="#" class="btn btn-success"><i class="fa fa-shopping-cart " aria-hidden="true"></i>&nbspAdd to Cart</a>
+							</div>
+						</div>
+						<!-- Single card End --><!-- Single card Start -->
+						<div class="col-md-3 card mx-4 my-3" style="width: 18rem;">
+							<img src="assets/img/Product/Pant/51-4yGgjTuL._UL1000_.jpg" class="card-img-top" alt="...">
+							<div class="card-body">
+								<h5 class="card-title">Card title</h5>
+								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								<a href="#" class="btn btn-success"><i class="fa fa-shopping-cart " aria-hidden="true"></i>&nbspAdd to Cart</a>
+							</div>
+						</div>
+						<!-- Single card End -->
+						
+					</div>
+				</div>
+
+
+
+
+				<div class="container my-5">
+					<h2 id="t-shirt"  class="bg-info shadow py-3 px-4">T-Shirt</h2>
+					<div class="row">
+						
+						<!-- Single card Start -->
+						<div class="col-md-3 card mx-4 my-3" style="width: 18rem;">
+							<img src="assets/img/Product/T-shirt/48a8ac113026953.Y3JvcCwxNzk3LDE0MDUsMCwxMjQ.jpg" class="card-img-top" alt="...">
+							<div class="card-body text-center">
+								<h5 class="card-title">Card title</h5>
+								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								<a href="#" class="btn btn-success"><i class="fa fa-shopping-cart " aria-hidden="true"></i>&nbspAdd to Cart</a>
+							</div>
+						</div>
+						<!-- Single card End --><!-- Single card Start -->
+						<div class="col-md-3 card mx-4 my-3" style="width: 18rem;">
+							<img src="assets/img/Product/T-shirt/71TAtC-eKcL._UL1500_.jpg" class="card-img-top" alt="...">
+							<div class="card-body text-center">
+								<h5 class="card-title">Card title</h5>
+								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								<a href="#" class="btn btn-success"><i class="fa fa-shopping-cart " aria-hidden="true"></i>&nbspAdd to Cart</a>
+							</div>
+						</div>
+						<!-- Single card End --><!-- Single card Start -->
+						<div class="col-md-3 card mx-4 my-3" style="width: 18rem;">
+							<img src="assets/img/Product/T-shirt/b56a2e62ca5f4f5012bc131b79f1b0aa.jpg" class="card-img-top" alt="...">
+							<div class="card-body text-center">
+								<h5 class="card-title">Card title</h5>
+								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								<a href="#" class="btn btn-success"><i class="fa fa-shopping-cart " aria-hidden="true"></i>&nbspAdd to Cart</a>
+							</div>
+						</div>
+						<!-- Single card End --><!-- Single card Start -->
+						<div class="col-md-3 card mx-4 my-3" style="width: 18rem;">
+							<img src="assets/img/Product/T-shirt/dc486c99fc91404260fa8613f18f728f.jpg" class="card-img-top" alt="...">
+							<div class="card-body text-center">
+								<h5 class="card-title">Card title</h5>
+								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								<a href="#" class="btn btn-success"><i class="fa fa-shopping-cart " aria-hidden="true"></i>&nbspAdd to Cart</a>
+							</div>
+						</div>
+						<!-- Single card End --><!-- Single card Start -->
+						<div class="col-md-3 card mx-4 my-3" style="width: 18rem;">
+							<img src="assets/img/Product/T-shirt/download.jpg" class="card-img-top" alt="...">
+							<div class="card-body text-center">
+								<h5 class="card-title">Card title</h5>
+								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								<a href="#" class="btn btn-success"><i class="fa fa-shopping-cart " aria-hidden="true"></i>&nbspAdd to Cart</a>
+							</div>
+						</div>
+						<!-- Single card End --><!-- Single card Start -->
+						<div class="col-md-3 card mx-4 my-3" style="width: 18rem;">
+							<img src="assets/img/Product/T-shirt/ee70ef85-889c-48a9-b483-c84867f94615_1.dd38e7d56fc9442dded22da90ea7288e.jpg" class="card-img-top" alt="...">
+							<div class="card-body text-center">
+								<h5 class="card-title">Card title</h5>
+								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								<a href="#" class="btn btn-success"><i class="fa fa-shopping-cart " aria-hidden="true"></i>&nbspAdd to Cart</a>
+							</div>
+						</div>
+						<!-- Single card End --><!-- Single card Start -->
+						<div class="col-md-3 card mx-4 my-3" style="width: 18rem;">
+							<img src="assets/img/Product/T-shirt/ff6f18c6be49ab405368fafc47e6896b.jpg" class="card-img-top" alt="...">
+							<div class="card-body text-center">
+								<h5 class="card-title">Card title</h5>
+								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								<a href="#" class="btn btn-success"><i class="fa fa-shopping-cart " aria-hidden="true"></i>&nbspAdd to Cart</a>
+							</div>
+						</div>
+						<!-- Single card End --><!-- Single card Start -->
+						<div class="col-md-3 card mx-4 my-3" style="width: 18rem;">
+							<img src="assets/img/Product/T-shirt/graduate-t-shirt-font.webp" class="card-img-top" alt="...">
+							<div class="card-body text-center">
+								<h5 class="card-title">Card title</h5>
+								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								<a href="#" class="btn btn-success"><i class="fa fa-shopping-cart " aria-hidden="true"></i>&nbspAdd to Cart</a>
+							</div>
+						</div>
+						<!-- Single card End -->
+						<!-- Single card Start -->
+						<div class="col-md-3 card mx-4 my-3" style="width: 18rem;">
+							<img src="assets/img/Product/T-shirt/images.jpg" class="card-img-top" alt="...">
+							<div class="card-body text-center">
+								<h5 class="card-title">Card title</h5>
+								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								<a href="#" class="btn btn-success"><i class="fa fa-shopping-cart " aria-hidden="true"></i>&nbspAdd to Cart</a>
+							</div>
+						</div>
+						<!-- Single card End -->
+						<!-- Single card Start -->
+						<div class="col-md-3 card mx-4 my-3" style="width: 18rem;">
+							<img src="assets/img/Product/T-shirt/men-s-fancy-t-shirt-500x500.jpg" class="card-img-top" alt="...">
+							<div class="card-body text-center">
+								<h5 class="card-title">Card title</h5>
+								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								<a href="#" class="btn btn-success"><i class="fa fa-shopping-cart " aria-hidden="true"></i>&nbspAdd to Cart</a>
+							</div>
+						</div>
+						<!-- Single card End -->
+						<!-- Single card Start -->
+						<div class="col-md-3 card mx-4 my-3" style="width: 18rem;">
+							<img src="assets/img/Product/T-shirt/navy-blue-front-500x500.jpg" class="card-img-top" alt="...">
+							<div class="card-body text-center">
+								<h5 class="card-title">Card title</h5>
+								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								<a href="#" class="btn btn-success"><i class="fa fa-shopping-cart " aria-hidden="true"></i>&nbspAdd to Cart</a>
+							</div>
+						</div>
+						<!-- Single card End -->
+						<!-- Single card Start -->
+						<div class="col-md-3 card mx-4 my-3" style="width: 18rem;">
+							<img src="assets/img/Product/T-shirt/dc486c99fc91404260fa8613f18f728f.jpg" class="card-img-top" alt="...">
+							<div class="card-body text-center">
+								<h5 class="card-title">Card title</h5>
+								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								<a href="#" class="btn btn-success"><i class="fa fa-shopping-cart " aria-hidden="true"></i>&nbspAdd to Cart</a>
+							</div>
+						</div>
+						<!-- Single card End -->
+					</div>
+				</div>
+				<div class="container">
+					<h2 id="panjabi"  class="bg-warning shadow py-3 px-4">Panjabi</h2>
+					<div class="row">
+						<!-- Single card Start -->
+						<div class="col-md-3 card mx-4 my-3" style="width: 18rem;">
+							<img src="assets/img/Product/Panjabi/0010835_tanjim-white-panjabi.jpeg" class="card-img-top" alt="...">
+							<div class="card-body text-center">
+								<h5 class="card-title">Card title</h5>
+								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								<a href="#" class="btn btn-success"><i class="fa fa-shopping-cart " aria-hidden="true"></i>&nbspAdd to Cart</a>
+							</div>
+						</div>
+						<!-- Single card End --><!-- Single card Start -->
+						<div class="col-md-3 card mx-4 my-3" style="width: 18rem;">
+							<img src="assets/img/Product/Panjabi/006a3d2241a893d99ac800379d4c7034.jpg" class="card-img-top" alt="...">
+							<div class="card-body text-center">
+								<h5 class="card-title">Card title</h5>
+								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								<a href="#" class="btn btn-success"><i class="fa fa-shopping-cart " aria-hidden="true"></i>&nbspAdd to Cart</a>
+							</div>
+						</div>
+						<!-- Single card End --><!-- Single card Start -->
+						<div class="col-md-3 card mx-4 my-3" style="width: 18rem;">
+							<img src="assets/img/Product/Panjabi/1_10_4.jpg" class="card-img-top" alt="...">
+							<div class="card-body text-center">
+								<h5 class="card-title">Card title</h5>
+								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								<a href="#" class="btn btn-success"><i class="fa fa-shopping-cart " aria-hidden="true"></i>&nbspAdd to Cart</a>
+							</div>
+						</div>
+						<!-- Single card End --><!-- Single card Start -->
+						<div class="col-md-3 card mx-4 my-3" style="width: 18rem;">
+							<img src="assets/img/Product/Panjabi/5db469ecb4916b4a87b5c7036d6b11f4.jpg" class="card-img-top" alt="...">
+							<div class="card-body text-center">
+								<h5 class="card-title">Card title</h5>
+								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								<a href="#" class="btn btn-success"><i class="fa fa-shopping-cart " aria-hidden="true"></i>&nbspAdd to Cart</a>
+							</div>
+						</div>
+						<!-- Single card End --><!-- Single card Start -->
+						<div class="col-md-3 card mx-4 my-3" style="width: 18rem;">
+							<img src="assets/img/Product/Panjabi/62a376251d2a32e737d519fb5057cac2.jpg" class="card-img-top" alt="...">
+							<div class="card-body text-center">
+								<h5 class="card-title">Card title</h5>
+								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								<a href="#" class="btn btn-success"><i class="fa fa-shopping-cart " aria-hidden="true"></i>&nbspAdd to Cart</a>
+							</div>
+						</div>
+						<!-- Single card End --><!-- Single card Start -->
+						<div class="col-md-3 card mx-4 my-3" style="width: 18rem;">
+							<img src="assets/img/Product/Panjabi/644-1.png" class="card-img-top" alt="...">
+							<div class="card-body text-center">
+								<h5 class="card-title">Card title</h5>
+								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								<a href="#" class="btn btn-success"><i class="fa fa-shopping-cart " aria-hidden="true"></i>&nbspAdd to Cart</a>
+							</div>
+						</div>
+						<!-- Single card End -->
+						<!-- Single card Start -->
+						<div class="col-md-3 card mx-4 my-3" style="width: 18rem;">
+							<img src="assets/img/Product/Panjabi/download.jpg" class="card-img-top" alt="...">
+							<div class="card-body text-center">
+								<h5 class="card-title">Card title</h5>
+								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								<a href="#" class="btn btn-success"><i class="fa fa-shopping-cart " aria-hidden="true"></i>&nbspAdd to Cart</a>
+							</div>
+						</div>
+						<!-- Single card End -->
+						<!-- Single card Start -->
+						<div class="col-md-3 card mx-4 my-3" style="width: 18rem;">
+							<img src="assets/img/Product/Panjabi/DSC8952-1-scaled.jpg" class="card-img-top" alt="...">
+							<div class="card-body">
+								<h5 class="card-title text-center">Card title</h5>
+								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								<a href="#" class="btn btn-success"><i class="fa fa-shopping-cart " aria-hidden="true"></i>&nbspAdd to Cart</a>
+							</div>
+						</div>
+						<!-- Single card End -->
+						<!-- Single card Start -->
+						<div class="col-md-3 card mx-4 my-3" style="width: 18rem;">
+							<img src="assets/img/Product/Panjabi/e96b0eea93b41e996877da9e80c2aa5f.jpg" class="card-img-top" alt="...">
+							<div class="card-body text-center">
+								<h5 class="card-title">Card title</h5>
+								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								<a href="#" class="btn btn-success"><i class="fa fa-shopping-cart " aria-hidden="true"></i>&nbspAdd to Cart</a>
+							</div>
+						</div>
+						<!-- Single card End -->
+						<!-- Single card Start -->
+						<div class="col-md-3 card mx-4 my-3" style="width: 18rem;">
+							<img src="assets/img/Product/Panjabi/images (1).jpg" class="card-img-top" alt="...">
+							<div class="card-body text-center">
+								<h5 class="card-title">Card title</h5>
+								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								<a href="#" class="btn btn-success"><i class="fa fa-shopping-cart " aria-hidden="true"></i>&nbspAdd to Cart</a>
+							</div>
+						</div>
+						<!-- Single card End -->
+						<!-- Single card Start -->
+						<div class="col-md-3 card mx-4 my-3" style="width: 18rem;">
+							<img src="assets/img/Product/Panjabi/images (2).jpg" class="card-img-top" alt="...">
+							<div class="card-body text-center">
+								<h5 class="card-title">Card title</h5>
+								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								<a href="#" class="btn btn-success"><i class="fa fa-shopping-cart " aria-hidden="true"></i>&nbspAdd to Cart</a>
+							</div>
+						</div>
+						<!-- Single card End -->
+						<!-- Single card Start -->
+						<div class="col-md-3 card mx-4 my-3" style="width: 18rem;">
+							<img src="assets/img/Product/Panjabi/images (3).jpg" class="card-img-top" alt="...">
+							<div class="card-body text-center">
+							
+								<h5 class="card-title">Card title</h5>
+								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								<a href="#" class="btn btn-success"><i class="fa fa-shopping-cart " aria-hidden="true"></i>&nbspAdd to Cart</a>
+							</div>
+						</div>
+						<!-- Single card End -->
+						<!-- Single card Start -->
+						<div class="col-md-3 card mx-4 my-3" style="width: 18rem;">
+							<img src="assets/img/Product/Panjabi/images (4).jpg" class="card-img-top" alt="...">
+							<div class="card-body text-center">
+								<h5 class="card-title">Card title</h5>
+								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								<a href="#" class="btn btn-success"><i class="fa fa-shopping-cart " aria-hidden="true"></i>&nbspAdd to Cart</a>
+							</div>
+						</div>
+						<!-- Single card End -->
+						<!-- Single card Start -->
+						<div class="col-md-3 card mx-4 my-3" style="width: 18rem;">
+							<img src="assets/img/Product/Panjabi/images.jpg" class="card-img-top" alt="...">
+							<div class="card-body text-center">
+								<h5 class="card-title">Card title</h5>
+								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								<a href="#" class="btn btn-success"><i class="fa fa-shopping-cart " aria-hidden="true"></i>&nbspAdd to Cart</a>
+							</div>
+						</div>
+						<!-- Single card End -->
+						<!-- Single card Start -->
+						<div class="col-md-3 card mx-4 my-3" style="width: 18rem;">
+							<img src="assets/img/Product/Panjabi/men-s-panjabi-mp764-ye0012091r.jpg" class="card-img-top" alt="...">
+							<div class="card-body text-center">
+								<h5 class="card-title">Card title</h5>
+								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								<a href="#" class="btn btn-success"><i class="fa fa-shopping-cart " aria-hidden="true"></i>&nbspAdd to Cart</a>
+							</div>
+						</div>
+						<!-- Single card End -->
+						
+					</div>
+				</div>
+				<div class="container">
+					<h2 id="coat"  class="bg-danger shadow py-3 px-4">Jacket</h2>
+					<div class="row">
+						
+							<!-- Single card Start -->
+						<div class="col-md-3 card mx-4 my-3" style="width: 18rem;">
+							<img src="assets/img/Product/Coat/1-8-570x570.jpg" class="card-img-top" alt="...">
+							<div class="card-body text-center">
+								<h5 class="card-title">Card title</h5>
+								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								<a href="#" class="btn btn-success"><i class="fa fa-shopping-cart " aria-hidden="true"></i>&nbspAdd to Cart</a>
+							</div>
+						</div>
+						<!-- Single card End -->
+							<!-- Single card Start -->
+						<div class="col-md-3 card mx-4 my-3" style="width: 18rem;">
+							<img src="assets/img/Product/Coat/2179645309af181a7eb89ab40c1f412b--mens-fashion-blazer-men-blazer.jpg" class="card-img-top" alt="...">
+							<div class="card-body text-center">
+								<h5 class="card-title">Card title</h5>
+								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								<a href="#" class="btn btn-success"><i class="fa fa-shopping-cart " aria-hidden="true"></i>&nbspAdd to Cart</a>
+							</div>
+						</div>
+						<!-- Single card End -->
+							<!-- Single card Start -->
+						<div class="col-md-3 card mx-4 my-3" style="width: 18rem;">
+							<img src="assets/img/Product/Coat/42c710ef3e4afd02abb1062eb000daab.jpg" class="card-img-top" alt="...">
+							<div class="card-body text-center">
+								<h5 class="card-title">Card title</h5>
+								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								<a href="#" class="btn btn-success"><i class="fa fa-shopping-cart " aria-hidden="true"></i>&nbspAdd to Cart</a>
+							</div>
+						</div>
+						<!-- Single card End -->
+							<!-- Single card Start -->
+						<div class="col-md-3 card mx-4 my-3" style="width: 18rem;">
+							<img src="assets/img/Product/Coat/504e25028891cc844ffc350fe5f43045.jpg" class="card-img-top" alt="...">
+							<div class="card-body text-center">
+								<h5 class="card-title">Card title</h5>
+								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								<a href="#" class="btn btn-success"><i class="fa fa-shopping-cart " aria-hidden="true"></i>&nbspAdd to Cart</a>
+							</div>
+						</div>
+						<!-- Single card End -->
+							<!-- Single card Start -->
+						<div class="col-md-3 card mx-4 my-3" style="width: 18rem;">
+							<img src="assets/img/Product/Coat/614qn4yPDHL.jpg" class="card-img-top" alt="...">
+							<div class="card-body text-center">
+								<h5 class="card-title">Card title</h5>
+								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								<a href="#" class="btn btn-success"><i class="fa fa-shopping-cart " aria-hidden="true"></i>&nbspAdd to Cart</a>
+							</div>
+						</div>
+						<!-- Single card End -->
+							<!-- Single card Start -->
+						<div class="col-md-3 card mx-4 my-3" style="width: 18rem;">
+							<img src="assets/img/Product/Coat/71NL4FCRfvL._AC_UL1498_.jpg" class="card-img-top" alt="...">
+							<div class="card-body text-center">
+								<h5 class="card-title">Card title</h5>
+								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								<a href="#" class="btn btn-success"><i class="fa fa-shopping-cart " aria-hidden="true"></i>&nbspAdd to Cart</a>
+							</div>
+						</div>
+						<!-- Single card End -->
+							<!-- Single card Start -->
+						<div class="col-md-3 card mx-4 my-3" style="width: 18rem;">
+							<img src="assets/img/Product/Coat/daa06ed43a248cfc068b2dee2ed9c51e.jpg" class="card-img-top" alt="...">
+							<div class="card-body text-center">
+								<h5 class="card-title">Card title</h5>
+								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								<a href="#" class="btn btn-success"><i class="fa fa-shopping-cart " aria-hidden="true"></i>&nbspAdd to Cart</a>
+							</div>
+						</div>
+						<!-- Single card End -->
+							<!-- Single card Start -->
+						<div class="col-md-3 card mx-4 my-3" style="width: 18rem;">
+							<img src="assets/img/Product/Coat/download (1).jpg" class="card-img-top" alt="...">
+							<div class="card-body text-center">
+								<h5 class="card-title">Card title</h5>
+								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								<a href="#" class="btn btn-success"><i class="fa fa-shopping-cart " aria-hidden="true"></i>&nbspAdd to Cart</a>
+							</div>
+						</div>
+						<!-- Single card End -->
+							<!-- Single card Start -->
+						<div class="col-md-3 card mx-4 my-3" style="width: 18rem;">
+							<img src="assets/img/Product/Coat/download.jpg" class="card-img-top" alt="...">
+							<div class="card-body text-center">
+								<h5 class="card-title">Card title</h5>
+								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								<a href="#" class="btn btn-success"><i class="fa fa-shopping-cart " aria-hidden="true"></i>&nbspAdd to Cart</a>
+							</div>
+						</div>
+						<!-- Single card End -->
+							<!-- Single card Start -->
+						<div class="col-md-3 card mx-4 my-3" style="width: 18rem;">
+							<img src="assets/img/Product/Coat/HTB1BHTnMRLoK1RjSZFuq6xn0XXap.jpg_q50.jpg" class="card-img-top" alt="...">
+							<div class="card-body text-center">
+								<h5 class="card-title">Card title</h5>
+								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								<a href="#" class="btn btn-success"><i class="fa fa-shopping-cart " aria-hidden="true"></i>&nbspAdd to Cart</a>
+							</div>
+						</div>
+						<!-- Single card End -->
+							<!-- Single card Start -->
+						<div class="col-md-3 card mx-4 my-3" style="width: 18rem;">
+							<img src="assets/img/Product/Coat/HTB1Dm8.S4TpK1RjSZFMq6zG_VXaS.jpg" class="card-img-top" alt="...">
+							<div class="card-body text-center">
+								<h5 class="card-title">Card title</h5>
+								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								<a href="#" class="btn btn-success"><i class="fa fa-shopping-cart " aria-hidden="true"></i>&nbspAdd to Cart</a>
+							</div>
+						</div>
+						<!-- Single card End -->
+							<!-- Single card Start -->
+						<div class="col-md-3 card mx-4 my-3" style="width: 18rem;">
+							<img src="assets/img/Product/Coat/image.jpg" class="card-img-top" alt="...">
+							<div class="card-body text-center">
+								<h5 class="card-title">Card title</h5>
+								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								<a href="#" class="btn btn-success"><i class="fa fa-shopping-cart " aria-hidden="true"></i>&nbspAdd to Cart</a>
+							</div>
+						</div>
+						<!-- Single card End -->
+							<!-- Single card Start -->
+						<div class="col-md-3 card mx-4 my-3" style="width: 18rem;">
+							<img src="assets/img/Product/Coat/images.jpg" class="card-img-top" alt="...">
+							<div class="card-body text-center">
+								<h5 class="card-title">Card title</h5>
+								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								<a href="#" class="btn btn-success"><i class="fa fa-shopping-cart " aria-hidden="true"></i>&nbspAdd to Cart</a>
+							</div>
+						</div>
+						<!-- Single card End -->
+							<!-- Single card Start -->
+						<div class="col-md-3 card mx-4 my-3" style="width: 18rem;">
+							<img src="assets/img/Product/Coat/TACVASEN-Military-Thicken-Fleece-Jacket-Mens-Winter-Casual-Hooded-Jacket-Coat-Pilot-Cargo-Cotton-Jackets-Windbreaker.jpg_640x640.jpg" class="card-img-top" alt="...">
+							<div class="card-body text-center">
+								<h5 class="card-title">Card title</h5>
+								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								<a href="#" class="btn btn-success"><i class="fa fa-shopping-cart " aria-hidden="true"></i>&nbspAdd to Cart</a>
+							</div>
+						</div>
+						<!-- Single card End -->
+						
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+	
+	
+	<!-- </div> -->
+</section>
+<!-- Section Part End -->
+<!-- TOP Start -->
+<a href="#" class="top"><i class="fa fa-angle-double-up" aria-hidden="true"></a>
+<!-- TOP End -->
+<!-- Side Bar Start -->
+<!-- jQuery JS -->
+<script src="assets/js/jquery-3.5.1.slim.min.js"></script>
+<!-- Popper JS -->
+<script src="assets/js/popper.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="assets/js/bootstrap.min.js"></script>
+<!-- CountUp JS -->
+<script src="assets/js/countUp.min.js"></script>
+<!-- Owl Curousel -->
+<script src="assets/js/owl.carousel.min.js"></script>
+<!-- Magicpopup -->
+<script src="assets/js/jquery.magnific-popup.min.js"></script>
+<!-- wow JS -->
+<script src="assets/js/wow.min.js"></script>
+<!-- Main JS -->
+<script src="assets/js/main.js"></script>
+<script src="js/jquery.scrollUp.min.js"></script>
+</body>
+</html>

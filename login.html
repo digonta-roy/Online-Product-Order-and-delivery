@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Log In</title>
+		<!-- Fac Icon -->
+		<link rel="icon" type="text/css" href="assets/img/logo.png">
+		<!-- Bootstrap v4.5.3 CSS -->
+		<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+		<!-- fontawesome v4.7.0 CSS -->
+		<link rel="stylesheet" type="text/css" href="assets/icon/css/font-awesome.min.css">
+		<!-- Custom CSS -->
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+		<style type="text/css">
+			body{
+			
+				background-image: url(assets/img/pexels-andrea-piacquadio-1050244.jpg);
+			background-repeat: no-repeat;
+			background-size: cover; /*contain*/
+			background-attachment: fixed;
+			}
+			.pos{
+				opacity: 0.9;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container my-5">
+			<div class="row">
+				<div class="col-md-5 offset-md-3">
+					<!-- ekahane offset mane hocce se 3 ta column ke skip korbe tai from ta middle e ace -->
+					<div class="card bg-dark pos">
+						<div class="card-header">
+							<h2 class="text-danger text-center"> LOG IN</h2>
+						</div>
+						<div class="card-body">
+							
+							<form action="#" method="post">
+								
+								<div class="form-group text-light font-weight-bold">
+									<label for="login">LOG IN As : <span class="text-danger">*</span></label>
+									<select name="login" id="login"  class="form-control">
+										
+										<option value="admin">Admin</option>
+										<option value="customer">Coutomer</option>
+										<option value="sales">Sales Man</option>
+										<option value="delivery">Delivery Man</option>
+										
+									</select>
+									
+								</div>
+								<div class="form-group text-light font-weight-bold">
+									<label for="email">Email Address <span class="text-danger">*</span></label>
+									<input type="email" name="email" id="email"  class="form-control form-control-lg">
+								</div>
+								<div class="form-group text-light font-weight-bold">
+									<label for="pass">Password<span class="text-danger">*</span></label>
+									<input type="password" name="pass" id="pass"  class="form-control form-control-lg " required="">
+								</div>
+								<p class=" text-white">Don't Have Any Account? &nbsp &nbsp &nbsp <a href="Registration.html" class="txt">Registration</a></p>
+								<div class="card-footer">
+									<div class="form-group">
+										<button type="submit" class="btn btn-success mx-5 my-2">login</button>
+										<button type="reset" class="btn btn-danger mx-5 my-2">Reset</button>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- jquery v3.5.1 JS -->
+		<script src="assets/js/jquery-3.5.1.slim.min.js"></script>
+		<!-- Popper JS -->
+		<script src="assets/js/popper.min.js"></script>
+		<!-- Bootstrap v4.5.3 JS -->
+		<script src="assets/js/bootstrap.min.js"></script>
+		<!-- Main JS -->
+		<script src="assets/js/main.js"></script>
+	</body>
+</html>

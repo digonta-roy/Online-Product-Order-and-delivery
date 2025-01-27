@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Registration</title>
+		<!-- Fac Icon -->
+		<link rel="icon" type="text/css" href="assets/img/logo.png">
+		<!-- Bootstrap v4.5.3 CSS -->
+		<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+		<!-- fontawesome v4.7.0 CSS -->
+		<link rel="stylesheet" type="text/css" href="assets/icon/css/font-awesome.min.css">
+		<!-- Custom CSS -->
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+		<style type="text/css">
+			body{
+				background-image: url(assets/img/person-adding-clothes-cart-closeup-online-shopping-campaign.jpg);
+			background-repeat: no-repeat;
+			background-size: cover; /*contain*/
+			background-attachment: fixed;
+			}
+			.pos{
+				opacity: 0.8;
+				font-weight: bold;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container my-5">
+			<div class="row">
+				<div class="col-md-5 offset-md-3">
+					<!-- ekahane offset mane hocce se 3 ta column ke skip korbe tai from ta middle e ace -->
+					<div class="card bg-info pos">
+						<div class="card-header">
+							<h2 class="text-danger text-center"> Register</h2>
+						</div>
+						<div class="card-body ">
+							
+							<form action="#" method="post">
+								<div class="form-group">
+									<label for="name">Your Name <span class="text-danger">*</span></label>
+									<input type="text" name="username" id="name" class="form-control" required="" placeholder="Please enter your name" >
+									
+								</div>
+								<div class="form-group">
+									<label for="number">Your Contact Number <span class="text-danger">*</span></label>
+									<input type="text" name="number" id="number" class="form-control " required="" placeholder="Please enter your contact number" >
+									
+								</div>
+								<div class="form-group">
+									<label for="email">Email Address <span class="text-danger">*</span></label>
+									<input type="email" name="email" id="email"  class="form-control "placeholder="Please enter your email">
+								</div>
+								<div class="form-group">
+									<label for="dob">Date of Birth <span class="text-danger">*</span></label>
+									<input type="date" name="dob" id="dob"  class="form-control">
+								</div>
+								<div class="form-group">
+									<label for="dis">Division <span class="text-danger">*</span></label>
+									<select name="district" id="dis"  class="form-control">
+										<option value="dhaka">Dhaka</option>
+										<option value="rangpur">Rangpur</option>
+										<option value="madaripur">Chittagong</option>
+										<option value="khulna">Khulna</option>
+										<option value="ragsahi">Rajsahi</option>
+										<option value="ragsahi">Mymensing</option>
+										<option value="ragsahi">Barishal</option>
+										
+									</select>
+								</div>
+								<div class="form-group">
+									<label for="dis">Your Photo <span class="text-danger">*</span></label>
+									<input type="file" name="photo" class="form-control">
+								</div>
+								
+								<div class="card-footer">
+									<div class="form-group">
+										<button type="submit" class="btn btn-success mx-5">Register</button>
+										<button type="reset" class="btn btn-danger mx-5">Reset</button>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- jquery v3.5.1 JS -->
+		<script src="assets/js/jquery-3.5.1.slim.min.js"></script>
+		<!-- Popper JS -->
+		<script src="assets/js/popper.min.js"></script>
+		<!-- Bootstrap v4.5.3 JS -->
+		<script src="assets/js/bootstrap.min.js"></script>
+		<!-- Main JS -->
+		<script src="assets/js/main.js"></script>
+	</body>
+</html>
